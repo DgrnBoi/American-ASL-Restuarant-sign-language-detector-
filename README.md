@@ -60,6 +60,7 @@ pip install -r requirements.txt
 
 # 3. Run live webcam detection
 python detect.py --source 0
+
 Press q to quit.
 
 
