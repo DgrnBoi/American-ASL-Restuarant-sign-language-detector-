@@ -73,4 +73,15 @@ def main():
                 return
 
     # Non-webcam (image/video)
-    if not
+    if not is_webcam:
+        results = model(source, conf=args.conf, imgsz=args.imgsz, save=args.save)
+        for r in results:
+            annotated = r.plot()
+            cv2.imshow('ASL Detection Result', annotated)
+            cv2.waitKey(0)  # ← FIXED: Added missing )
+        cv2.destroyAllWindows()
+
+    print("Detection complete!")
+
+if __name__ == '__main__':
+    main()
