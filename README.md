@@ -72,15 +72,16 @@ pip install -r requirements.txt
 
 Project Structure
 American-ASL-Restaurant-Sign-Language-Detector/
-├── detect.py              # Main inference script
-├── train.py               # (Optional) Retrain on custom data
-├── best.pt                # Trained YOLOv8 model (~6 MB)
-├── data.yaml              # Dataset config (80 classes)
-├── requirements.txt
+├── .gitignore
+├── LICENSE
 ├── README.md
-├── LICENSE                # MIT
-└── .gitignore
-
+├── requirements.txt
+├── data.yaml
+├── best.pt
+├── detect.py              # Pro version
+├── webcam_demo.py         # Beginner version
+└── demo/
+    └── README.md
 Note: Dataset and demo files are not included due to size and licensing.
 
 Difficulties Faced:
